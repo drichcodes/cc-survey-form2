@@ -1,0 +1,80 @@
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27,27,50,0.8);
+    --color-green: #37af65;
+
+    --accent-left: rgba(58,58,158,0.8);
+    --accent-right: rgba(136,136,206,0.7);
+
+    --size-subheading: 1.125rem;
+    --size-label: 1.125rem;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: linear-gradient(to right, var(--accent-left), var(--accent-right)), url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--color-white);
+    margin: 0;
+}
+
+.container {
+    margin: 3.125rem auto;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.description {
+    font-size: var(--size-subheading);
+    margin: 1rem auto;
+    text-shadow: 1px 1px #333;
+}
+
+header {
+    padding: 2rem 1rem 1rem 2rem;
+}
+
+h1 {
+    margin: 0;
+    text-shadow: 1px 1px #333333;
+}
+
+/*** Form Styles ***/
+
+form {
+    background: var(--color-darkblue-alpha);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.3rem;
+    width: 60%;
+    margin: auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.form-group p {
+    line-height: 1rem;
+    margin: 0.5rem 0.1rem;
+}
+
+.form-group p:not(:nth-child(1)) {
+    margin: 0.5rem 0;
+}
+
