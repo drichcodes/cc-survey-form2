@@ -59,7 +59,7 @@ form {
     background: var(--color-darkblue-alpha);
     padding: 2.5rem 0.625rem;
     border-radius: 0.3rem;
-    width: 60%;
+    width: 90%;
     margin: auto;
 }
 
@@ -76,5 +76,11 @@ form {
 
 .form-group p:not(:nth-child(1)) {
     margin: 0.5rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    .form {
+        width: 60%;
+    }
 }
 
